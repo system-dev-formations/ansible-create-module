@@ -59,7 +59,7 @@ def github_repo_absent(data=None):
     headers = {
         "Authorization": "token {}" . format(data['github_auth_key'])
     }
-    url = "{}/repos/{}/{}" . format(api_url, "system-dev-formations", data['name'])
+    url = "{}/repos/{}/{}" . format(api_url, "rvm8h", data['name'])
     result = requests.delete(url, headers=headers)
 
     if result.status_code == 204:
